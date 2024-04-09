@@ -1,0 +1,135 @@
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 700 josefin-sans-<uniquifier> */
+ * {
+    overflow-x:hidden;
+    transition: all 0.75s ease-out;
+    a, div > img:hover {
+        cursor: pointer;
+    }
+    
+}
+
+body{
+    margin:0;
+    color: white;
+    background-color: #f8f8f8;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    overflow-x:hidden;
+    scroll-snap-type: y mandatory;
+    cursor: url('/images/mouse.png'), auto;
+
+    & #background{
+        object-fit: cover;
+        height: 110dvh;
+        width: 110vw;
+        left: -10vw;
+        top:-10dvh;
+    }
+    & #logo{
+        width:75vw;
+        position: absolute;    
+        top: 35dvh;    
+       left: 10vw;    
+    }
+    
+
+
+
+    header{
+        position: absolute;
+        left:0;
+        border-bottom: rgba(255, 255, 255, 0.089) solid 1px;
+        margin: none;
+        box-shadow:0px 2px 8px rgba(255, 255, 255, 0.089);
+        z-index: 10;
+
+        ul{
+        display: flex;
+        width: 90vw;
+        padding: 0 1rem 0 1rem;
+        list-style: none;
+        gap: 2rem;
+
+        li{
+            flex: none;
+            align-self: center;
+        }
+        li:nth-last-child(2){
+            flex: auto;
+            text-align: end;
+        }
+    } 
+
+        & img{
+            height: 1.7rem;
+            justify-self: start;
+        }
+    }
+    & div{
+        margin: 2rem auto;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+
+        & div{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(253, 253, 253);
+            border-radius: 1rem;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.315);
+
+            & img{
+                padding:1.5rem;
+                object-fit: contain;
+                height: 10rem;
+                width: 10rem;
+            }
+        }
+
+    }
+    .footer{
+        display: flex;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 1rem 2rem;
+        background-color: rgba(128, 128, 128, 0.158);
+
+
+        span{
+            display: flex;
+            gap:.5rem;
+            p{
+                color: black;
+                text-align: right;
+            }
+            img{
+                height: 3rem;
+            }
+        }
+    }
+}
+
+.unavailable{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100lvw;
+    height: 100lvh;
+    margin: 0;
+    top: 0;
+    justify-content: center;
+    align-items:center;
+
+
+    & img{
+        position: absolute;
+        width: 70vmin;
+        border-radius: 2rem;
+    }
+}
