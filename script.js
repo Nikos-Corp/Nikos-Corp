@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
  blickGraphicsElements.forEach(function(element) {
      element.addEventListener('click', function() {
          // Navigate to '/blickGraphics/blickGraphics.html'
-         window.location.href = '/blickGraphics/blickGraphics.html';
+         window.location.href = '/blickGraphics/bG.html';
      });
  });
     
