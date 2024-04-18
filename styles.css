@@ -55,12 +55,12 @@ body{
         li{
             flex: none;
             align-self: center;
+            font-size: smaller;
 
         }
         li:nth-last-child(2){
             flex: auto;
             text-align: end;
-            font-size: small;
         }
     } 
 
@@ -101,6 +101,7 @@ body{
         margin: 0;
         padding: 1rem 2rem;
         background-color: rgba(128, 128, 128, 0.158);
+
 
 
         span{
