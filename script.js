@@ -85,5 +85,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+ // Get all elements with the class name 'blickGraphics'
+ const blickGraphicsElements = document.querySelectorAll('.blickGraphics');
 
+ // Add click event listener to each 'blickGraphics' element
+ blickGraphicsElements.forEach(function(element) {
+     element.addEventListener('click', function() {
+         // Navigate to '/blickGraphics/blickGraphics.html'
+         window.location.href = '/blickGraphics/blickGraphics.html';
+     });
+ });
     
