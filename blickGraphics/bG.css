@@ -20,26 +20,43 @@
   background-color: #000000;
 }
 
-@media (max-width: 1111px) { /* Adjust breakpoint as needed */
-  .menu{
-    
+@media (max-width: 100000px) { /* Adjust breakpoint as needed */
+  .navbar-toggle{
+    display: flex;
   }
-  #navbarMenu {
+  .navbarMenu{
+    box-sizing: border-box;
+    background-color: #ffffff6c;
+    display: flex;
     flex-direction: column;
-    height: 15dvh;
-    padding: 5vw 0 5vw 0;
+    padding: 3vw 0 2vw 0;
+    border-bottom: #d4d4d4 solid 2px;
+    box-shadow: #000000 4px 4px 8px;
+    z-index: 10;
+    background-color: white;
+    
     img{
-      height: 5dvh;
       position: absolute;
-      left: 5vw;
-    }
-    a{
-      font-size: 3rem;
+      left:5vw;
+      height: 7vw;
     }
   }
-
-  .navbar-toggle {
-    display: flex; /* Displayed on smaller screens */
+  .menuItem{
+    display: none;
+    margin: 1rem 0;
+  }
+  
+  #darkDiv{
+    position: absolute;
+    bottom: -1;
+    left: 0;
+    height: 100dvh;
+    width: 100vw;
+    background-color: rgba(3, 0, 26, 0.473);
+  }
+  a{
+      font-size: 3rem;
+      letter-spacing: .2rem;
   }
 }
 
