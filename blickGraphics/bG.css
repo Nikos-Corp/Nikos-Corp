@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+*{
+  transition: all .4s ease;
+}
+
+body > *{
+  scroll-snap-align: start none;
+}
 body{
   font-family: 'Jost';
   margin: 0;
   overflow-x: hidden;
   text-align: center;
-
+  overflow-y: scroll;
+  scroll-snap-type:y proximity;
+  
   h1{
     font-family: 'Overpass';
     font-weight: 900;
@@ -112,6 +121,7 @@ body{
     
     .intro{
       flex-direction: column;
+
     }
 
     div{
@@ -122,42 +132,82 @@ body{
       flex-wrap: wrap;
       gap: 2rem;
       justify-content: center;
-      }
+    }
 
-      .card{
+    .card{
+      margin: 0;
+      padding:1.5rem 1rem 3rem 1rem;
+      background-color: rgb(255, 255, 255);
+      border: #80808062 solid 1px;
+      border-radius: .5rem;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+      width: 20rem;
+      max-width: 70vw;
+
+      .cardContent{
+        max-width: 65vw;
         margin: 0;
-        padding:1.5rem 1rem 3rem 1rem;
-        background-color: rgb(255, 255, 255);
-        border: #80808062 solid 1px;
-        border-radius: .5rem;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
-        width: 20rem;
-        max-width: 70vw;
+        padding: 0;
 
-        .cardContent{
-          max-width: 65vw;
+        p{
           margin: 0;
-          padding: 0;
+        }
+        
+      }
+      h2{
+        font-size: 2rem;
+        margin:0;
+        
+      }
 
-          p{
-            margin: 0;
-          }
-          
-        }
-        h2{
-          font-size: 2rem;
-          margin:0;
-          
-        }
+      img{
+        margin: 0;
+        max-width: 65vw;
+      }
+    }
+  }
 
-        img{
-          margin: 0;
-          max-width: 65vw;
-        }
+  #gallery-section{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100dvh;
+    background-color: #0300294b;
+    font-size: 2rem;
+      h1{
+        margin: 2rem 0 0 0;
+      }
+      span{
+        color:#f3f3f3;
+        margin: 0 0 3rem 0;
       }
 
 
+    .slider {
+      width: 90vw;
+      height: 80dvh;
+      display: flex;
+      overflow-y: hidden;
+      overflow-x:scroll ;
+      scrollbar-width: 1px;
+      align-items: center;
+      scrollbar-color: rgba(55, 0, 255, 0.219);
+      
+    
+    
+      .slide {
+        margin:0;
+        padding:0;
+    
+
+        .image {
+          box-sizing: border-box;
+          object-fit: contain;
+          width: 90vw;
+          max-height: 80dvh;
+        } 
+      }
     }
   }
 }
-
