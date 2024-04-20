@@ -1,20 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 *{
-  transition: all .4s ease;
+  transition: all .4s ease-in-out;
 }
 
-body > *{
-  scroll-snap-align: start none;
+.navbar-toggle {
+  display: none; /* Initially hidden on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+  position:absolute;
+  right: 5vw;
+  top: 3vw;
 }
+
+.bar {
+  width: 7vw;
+  height: 1vw;
+  margin: .7vw 0;
+  background-color: #000000;
+}
+
+@media (max-width: 1111px) { /* Adjust breakpoint as needed */
+  .menu{
+    
+  }
+  #navbarMenu {
+    flex-direction: column;
+    height: 15dvh;
+    padding: 5vw 0 5vw 0;
+    img{
+      height: 5dvh;
+      position: absolute;
+      left: 5vw;
+    }
+    a{
+      font-size: 3rem;
+    }
+  }
+
+  .navbar-toggle {
+    display: flex; /* Displayed on smaller screens */
+  }
+}
+
 body{
   font-family: 'Jost';
   margin: 0;
   overflow-x: hidden;
   text-align: center;
-  overflow-y: scroll;
-  scroll-snap-type:y proximity;
-  
+
   h1{
     font-family: 'Overpass';
     font-weight: 900;
@@ -199,7 +233,7 @@ body{
       .slide {
         margin:0;
         padding:0;
-    
+        
 
         .image {
           box-sizing: border-box;
