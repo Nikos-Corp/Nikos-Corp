@@ -20,13 +20,12 @@
   background-color: #000000;
 }
 
-@media (max-width: 100000px) { /* Adjust breakpoint as needed */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
   .navbar-toggle{
     display: flex;
   }
-  .navbarMenu{
+  ul{
     box-sizing: border-box;
-    background-color: #ffffff6c;
     display: flex;
     flex-direction: column;
     padding: 3vw 0 2vw 0;
