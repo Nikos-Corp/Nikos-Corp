@@ -20,7 +20,7 @@
   background-color: #000000;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
+@media (orientation = portrait) { /* Adjust breakpoint as needed */
   .navbar-toggle{
     display: flex;
   }
