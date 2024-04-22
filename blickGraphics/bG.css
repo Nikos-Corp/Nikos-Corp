@@ -3,7 +3,11 @@
 *{
   transition: all .4s ease-in-out;
 }
-
+.temp{
+  height: 100dvh;
+  width: 100vw;
+  background-color: #000000;
+}
 .navbar-toggle {
   display: none; /* Initially hidden on larger screens */
   flex-direction: column;
@@ -11,16 +15,19 @@
   position:absolute;
   right: 5vw;
   top: 3vw;
+  background-color: #000000;
+  padding: 1.5vw;
+  border-radius: 1vw;
 }
 
 .bar {
-  width: 7vw;
-  height: 1vw;
-  margin: .7vw 0;
-  background-color: #000000;
+  width: 4.5vw;
+  height: .6vw;
+  margin: .4vw 0;
+  background-color: #ffffff;
 }
 
-@media (orientation = portrait) { /* Adjust breakpoint as needed */
+@media (width <= 992px) { /* Adjust breakpoint as needed */
   .navbar-toggle{
     display: flex;
   }
@@ -33,25 +40,27 @@
     box-shadow: #000000 4px 4px 8px;
     z-index: 10;
     background-color: white;
-    
+
     img{
       position: absolute;
       left:5vw;
       height: 7vw;
     }
   }
+ 
   .menuItem{
+    font-size: 2dvh;
+    letter-spacing: .5dvh;
     display: none;
-    margin: 1rem 0;
+    margin: 1dvh 0;
+    position: relative;
   }
   
   #darkDiv{
-    position: absolute;
-    bottom: -1;
-    left: 0;
     height: 100dvh;
     width: 100vw;
     background-color: rgba(3, 0, 26, 0.473);
+    z-index: -10;
   }
   a{
       font-size: 3rem;
@@ -90,8 +99,7 @@ body{
         padding: 0 1rem;
         font-family: 'Overpass';
         font-weight: 700;
-        font-size: 1.5rem;
-        
+        font-size: 2.5vw;      
       }
       li:nth-child(1) {
         display: flex;
