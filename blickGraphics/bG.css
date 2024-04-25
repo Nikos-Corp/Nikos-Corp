@@ -3,83 +3,7 @@
 *{
   transition: all .4s ease-in-out;
 }
-.temp{
-  height: 100dvh;
-  width: 100vw;
-  background-color: #000000;
-}
-.navbar-toggle {
-  display: none; /* Initially hidden on larger screens */
-  flex-direction: column;
-  cursor: pointer;
-  position:absolute;
-  right: 5vw;
-  top: 3vw;
-  background-color: #000000;
-  padding: 1.5vw;
-  border-radius: 1vw;
-}
 
-.bar {
-  width: 4.5vw;
-  height: .6vw;
-  margin: .4vw 0;
-  background-color: #ffffff;
-}
-
-@media (width <= 992px) { /* Adjust breakpoint as needed */
-  .navbar-toggle{
-    display: flex;
-  }
-  ul{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 3vw 0 2vw 0;
-    border-bottom: #d4d4d4 solid 2px;
-    box-shadow: #000000 4px 4px 8px;
-    z-index: 10;
-    background-color: white;
-
-    img{
-      position: absolute;
-      left:5vw;
-      height: 7vw;
-    }
-  }
- 
-  .menuItem{
-    font-size: 2dvh;
-    letter-spacing: .5dvh;
-    display: none;
-    margin: 1dvh 0;
-    position: relative;
-  }
-  
-  #darkDiv{
-    height: 100dvh;
-    width: 100vw;
-    background-color: rgba(3, 0, 26, 0.473);
-    z-index: -10;
-  }
-  h1{
-    font-size: 3rem;
-  }
-  h2{
-    font-size: 2rem;
-  }
-  a{
-      font-size: 3rem;
-      letter-spacing: .2rem;
-  }
-  p{
-    font-size: 2rem;
-  }
-  .sectionDescription{
-    font-size: 1.5rem;
-  }
-
-}
 
 body{
   font-family: 'Jost';
@@ -196,11 +120,11 @@ body{
     }
 
     div{
-
-      margin: 0 auto 2rem auto;
-      padding: 2rem;
+      
       display: flex;
       flex-wrap: wrap;
+      padding: 2rem;
+      margin: 0 auto 2rem auto;
       gap: 2rem;
       justify-content: center;
     }
@@ -213,7 +137,6 @@ body{
       border-radius: .5rem;
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
       width: 20rem;
-      max-width: 70vw;
 
       .cardContent{
         max-width: 65vw;
@@ -234,6 +157,7 @@ body{
       img{
         margin: 0;
         max-width: 65vw;
+        object-fit: contain;
       }
     }
   }
@@ -281,4 +205,123 @@ body{
       }
     }
   }
+  #contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+        
+    > div:nth-child(2){
+      background-color: rgb(255, 255, 255);
+      width:80vw;
+      border: #d4d4d4 solid 1px;
+      border-radius: 3rem;
+      box-shadow: #0000001e 2px 2px 8px;
+      margin: 2rem 0 1rem 0;
+      .social{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 3rem 1.5rem;
+        img{
+          height: 7rem;
+        }
+        a{
+          text-decoration: none;
+          color: #2a51ff;
+        }
+        h1{
+          margin: 0;
+        }
+        
+      }
+    }
+    .map{
+          width: 80vw;
+          aspect-ratio: 16/9;
+          border-radius: 1rem;
+          border: none;
+        }
+  }
+}
+
+.temp{
+  height: 100dvh;
+  width: 100vw;
+  background-color: #000000;
+}
+.navbar-toggle {
+  display: none; /* Initially hidden on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+  position:absolute;
+  right: 5vw;
+  top: 3vw;
+  background-color: #000000;
+  padding: 1.5vw;
+  border-radius: 1vw;
+}
+
+.bar {
+  width: 4.5vw;
+  height: .6vw;
+  margin: .4vw 0;
+  background-color: #ffffff;
+}
+
+@media ( orientation: portrait) { /* Adjust breakpoint as needed */
+  .navbar-toggle{
+    display: flex;
+  }
+  ul{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 0 2vw 0;
+    border-bottom: #d4d4d4 solid 2px;
+    box-shadow: #000000 4px 4px 8px;
+    z-index: 10;
+    background-color: white;
+
+    img{
+      position: absolute;
+      left:5vw;
+      height: 7vw;
+    }
+  }
+ 
+  .menuItem{
+    font-size: 2dvh;
+    letter-spacing: .5dvh;
+    display: none;
+    margin: 1dvh 0;
+    position: relative;
+  }
+  
+  #darkDiv{
+    height: 100dvh;
+    width: 100vw;
+    background-color: rgba(3, 0, 26, 0.473);
+    z-index: -10;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  a{
+      font-size: 3rem;
+      letter-spacing: .2rem;
+  }
+  p{
+  }
+  .sectionDescription{
+    font-size: 1.5rem;
+  }
+  
+ .cards{
+    flex-direction: column ;
+    align-items: center;
+ }
 }
