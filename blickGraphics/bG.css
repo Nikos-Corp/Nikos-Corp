@@ -22,8 +22,7 @@ body{
     padding: 0;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px 10px 0px #d4d4d4;
-
+    filter: drop-shadow(8px 8px 10px gray);
     ul{
       display: flex;
       list-style: none;
@@ -88,17 +87,17 @@ body{
           flex-wrap: wrap;
 
           button{
-          color: #ffffff;
-          font-size: larger;
-          font-weight: 700;
-          letter-spacing: .3rem;
-          text-decoration: none;
-          border: none;
-          padding: .5rem 1rem;
-          margin: 1rem;
-          border-radius: .5rem;
-          box-shadow: 5px 5px 10px 0px #d4d4d4;background-color: rgb(138, 138, 255)
-        }
+            color: #ffffff;
+            font-size: larger;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            border: none;
+            padding: .5rem 1rem;
+            margin: 1rem;
+            border-radius: .5rem;
+            filter: drop-shadow(8px 8px 10px gray);        
+          }
         }
         .contactUs-btn{
           background-color: #eb57ff;
@@ -135,7 +134,7 @@ body{
       background-color: rgb(255, 255, 255);
       border: #80808062 solid 1px;
       border-radius: .5rem;
-      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(8px 8px 10px gray);
       width: 20rem;
 
       .cardContent{
@@ -226,8 +225,7 @@ body{
         background-color: rgb(255, 255, 255);
         border: #d4d4d4 solid 1px;
         border-radius: 1rem;
-        box-shadow: #0000001e 2px 2px 8px;
-
+        filter: drop-shadow(8px 8px 10px gray);
         img{
           height: 3.5rem;
           margin-right: 1rem;
@@ -267,54 +265,69 @@ body{
           border: none;
         }
   }
-}
-#about-section{
-  background-color: rgb(217, 217, 217);
-  padding: 5dvh 0;
-  .about-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5dvh 5vw;
-    gap: 2rem;
 
-    .about-info{
-      display: flex;
-      margin: 0;
-
-      span {
-        font-size: 7rem;
+  #about-section{
+    background-color: rgb(217, 217, 217);
+    padding: 5dvh 0;
+    .about-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 5dvh 5vw;
+      gap: 2rem;
+  
+      .about-info{
+        display: flex;
         margin: 0;
-        padding: 0;
-      }
-      p{
-        text-align: left;
+  
+        span {
+          font-size: 7rem;
+          margin: 0;
+          padding: 0;
+        }
+        p{
+          text-align: left;
+        }
       }
     }
+    span{
+      display: flex;
+      justify-content: center;
+      margin: 2rem auto;
+      font-size: 2rem;
+    }
+    button{
+      border: none;
+      border-radius: 1rem;
+      color:rgb(255, 255, 255);
+      background-color: #000000;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: .2rem;
+      margin: 0;
+      padding: 2rem 4rem;
+    }
   }
-  span{
+  
+  .footer{
     display: flex;
-    justify-content: center;
-    margin: 2rem auto;
-    font-size: 2rem;
+    justify-content: left;
+    align-items: center;
+    height: 5dvh;
+    background-color: white;
+    padding: 1dvh 3vw;
+    img{
+      height: 3dvh;
+      margin:0 .5dvh 0 0;
+      filter: grayscale(100%) contrast(100%);
+    }
+    span{
+      font-size: 2.5dvh;
+      margin: 0 0 0 auto;
+    }
   }
-  button{
-    border: none;
-    border-radius: 1rem;
-    color:rgb(255, 255, 255);
-    background-color: #000000;
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    margin: 0;
-    padding: 2rem 4rem;
-  }
+  background-color: black;
 }
 
-.temp{
-  height: 100dvh;
-  width: 100vw;
-  background-color: #000000;
-}
 .navbar-toggle {
   display: none; /* Initially hidden on larger screens */
   flex-direction: column;
@@ -344,7 +357,7 @@ body{
     flex-direction: column;
     padding: 3vw 0 2vw 0;
     border-bottom: #d4d4d4 solid 2px;
-    box-shadow: #000000 4px 4px 8px;
+    filter: drop-shadow(8px 8px 10px gray);
     z-index: 10;
     background-color: white;
 
