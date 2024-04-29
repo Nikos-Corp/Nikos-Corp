@@ -203,6 +203,8 @@ body{
           object-fit: contain;
           width: 90vw;
           max-height: 80dvh;
+          margin-right: 30vw;
+
         } 
       }
     }
