@@ -36,7 +36,9 @@ body{
         padding: 0 1rem;
         font-family: 'Overpass';
         font-weight: 700;
-        font-size: 2rem;      
+        font-size: 2rem;    
+        background-color: white;  
+        width: 100vw;
       }
       li:nth-child(1) {
         display: flex;
