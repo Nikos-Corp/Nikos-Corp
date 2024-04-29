@@ -269,14 +269,44 @@ body{
   }
 }
 #about-section{
-  span {
-    background-color: red;
-    
-    font-size: 2rem;
-    content: "\2022";
+  background-color: rgb(217, 217, 217);
+  padding: 5dvh 0;
+  .about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5dvh 5vw;
+    gap: 2rem;
+
+    .about-info{
+      display: flex;
+      margin: 0;
+
+      span {
+        font-size: 7rem;
+        margin: 0;
+        padding: 0;
+      }
+      p{
+        text-align: left;
+      }
+    }
   }
-  p{
-    display: none;
+  span{
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    font-size: 2rem;
+  }
+  button{
+    border: none;
+    border-radius: 1rem;
+    color:rgb(255, 255, 255);
+    background-color: #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    margin: 0;
+    padding: 2rem 4rem;
   }
 }
 
