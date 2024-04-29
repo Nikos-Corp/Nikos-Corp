@@ -36,7 +36,7 @@ body{
         padding: 0 1rem;
         font-family: 'Overpass';
         font-weight: 700;
-        font-size: 2.5vw;      
+        font-size: 2rem;      
       }
       li:nth-child(1) {
         display: flex;
@@ -210,31 +210,55 @@ body{
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
+    margin: 5dvh 0;
         
     > div:nth-child(2){
-      background-color: rgb(255, 255, 255);
-      width:80vw;
-      border: #d4d4d4 solid 1px;
-      border-radius: 3rem;
-      box-shadow: #0000001e 2px 2px 8px;
-      margin: 2rem 0 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 5dvh 0;
       .social{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        padding: 3rem 1.5rem;
+        justify-content: center;
+        padding: 1.5rem 2rem;
+        background-color: rgb(255, 255, 255);
+        border: #d4d4d4 solid 1px;
+        border-radius: 1rem;
+        box-shadow: #0000001e 2px 2px 8px;
+
         img{
-          height: 7rem;
+          height: 3.5rem;
+          margin-right: 1rem;
         }
         a{
+          font-size: 1.2rem;
+          font-weight: 300;
           text-decoration: none;
           color: #2a51ff;
         }
-        h1{
+        span{
+          display: block;
           margin: 0;
+          font-size: 1.6rem;
+          font-weight: 500;
         }
         
       }
+    }
+    button{
+      width: 70vw;
+      padding: 2dvh;
+      font-size: 2rem;
+      margin:3dvh;
+      text-align: center;
+      font-weight: 700;
+      border-radius: 1rem;
+      letter-spacing: 0.3rem;
+      border: none;
+      background-color: rgb(15, 137, 137);
+      color: white;
     }
     .map{
           width: 80vw;
@@ -242,6 +266,17 @@ body{
           border-radius: 1rem;
           border: none;
         }
+  }
+}
+#about-section{
+  span {
+    background-color: red;
+    
+    font-size: 2rem;
+    content: "\2022";
+  }
+  p{
+    display: none;
   }
 }
 
@@ -324,4 +359,12 @@ body{
     flex-direction: column ;
     align-items: center;
  }
+ #contact-section{
+
+  a{
+    font-size: 5rem;
+  }
+ }
+ 
+
 }

@@ -20,14 +20,14 @@ body{
     scroll-snap-type: y mandatory;
     cursor: url('/images/mouse.png'), auto;
 
-    & #background{
+    #background{
         object-fit: cover;
         height: 110dvh;
         width: 110vw;
         left: -10vw;
         top:-10dvh;
     }
-    & #logo{
+    #logo{
         width:75vw;
         position: absolute;    
         top: 35dvh;    
@@ -64,12 +64,12 @@ body{
         }
     } 
 
-        & img{
+        img{
             height: 1rem;
             justify-self: start;
         }
     }
-    & div{
+    div{
         margin: 2rem auto;
         padding: 2rem;
         display: flex;
@@ -78,14 +78,14 @@ body{
         justify-content: center;
 
 
-        & div{
+        div{
             margin: 0;
             padding: 0;
             background-color: rgb(253, 253, 253);
             border-radius: 1rem;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.315);
 
-            & img{
+            img{
                 padding:1.5rem;
                 object-fit: contain;
                 height: 10rem;
@@ -132,7 +132,7 @@ body{
     align-items:center;
 
 
-    & img{
+    img{
         position: absolute;
         width: 70vmin;
         border-radius: 2rem;
