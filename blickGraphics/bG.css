@@ -366,10 +366,9 @@ body{
     align-items: center;
     padding: 3vw 0 2vw 0;
     border-bottom: #d4d4d4 solid 2px;
-    box-shadow: #000000 4px 4px 8px;
+    filter: drop-shadow(8px 8px 10px gray);
+    z-index: 10;
     background-color: white;
-    max-height: 10vw;
-    position: relative;
 
     img{
       position: absolute;
