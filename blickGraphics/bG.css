@@ -357,39 +357,51 @@ body{
 @media ( orientation: portrait) { /* Adjust breakpoint as needed */
   .navbar-toggle{
     display: flex;
+    z-index: 1;
   }
   ul{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 3vw 0 2vw 0;
     border-bottom: #d4d4d4 solid 2px;
     box-shadow: #000000 4px 4px 8px;
-    z-index: 10;
     background-color: white;
     max-height: 10vw;
+    position: relative;
 
     img{
       position: absolute;
       left:5vw;
       height: 7vw;
     }
-  }
- 
-  .menuItem{
-    font-size: 2dvh;
-    letter-spacing: .5dvh;
-    display: none;
-    margin: 1dvh 0;
-    position: relative;
+    
+    .invisibleMenuItem{
+      display: none;
+    }
+    .menuItem{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      font-size: 2dvh;
+      letter-spacing: .5dvh;
+      padding: 2dvh 0;
+      margin: 0 30vw;
+    }
+    .invisibleDiv, .darkDiv{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100dvh;
+      width: 100vw;
+      background-color: rgba(3, 0, 26, 0.473);
+      z-index: 10px;
+
+    }
   }
   
-  #darkDiv{
-    height: 100dvh;
-    width: 100vw;
-    background-color: rgba(3, 0, 26, 0.473);
-    z-index: -10;
-  }
+  
   h1{
     font-size: 3rem;
   }
