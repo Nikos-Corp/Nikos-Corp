@@ -22,20 +22,23 @@ body{
     padding: 0;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(8px 8px 10px gray);
+    box-shadow: 5px 5px 10px 0px #d4d4d4;
+
     ul{
       display: flex;
+      height: 9dvh;
       list-style: none;
       align-items: center;
-      padding-right: 2rem;
-      padding-left: 1rem;
+      padding:1dvh 2vw 1dvh 2vw;
       margin:0;
 
       li{
         padding: 0 1rem;
         font-family: 'Overpass';
         font-weight: 700;
-        font-size: 2rem;      
+        font-size: 2rem;    
+        background-color: white;  
+        width: 100vw;
       }
       li:nth-child(1) {
         display: flex;
@@ -87,17 +90,17 @@ body{
           flex-wrap: wrap;
 
           button{
-            color: #ffffff;
-            font-size: larger;
-            font-weight: 700;
-            letter-spacing: .3rem;
-            text-decoration: none;
-            border: none;
-            padding: .5rem 1rem;
-            margin: 1rem;
-            border-radius: .5rem;
-            filter: drop-shadow(8px 8px 10px gray);        
-          }
+          color: #ffffff;
+          font-size: larger;
+          font-weight: 700;
+          letter-spacing: .3rem;
+          text-decoration: none;
+          border: none;
+          padding: .5rem 1rem;
+          margin: 1rem;
+          border-radius: .5rem;
+          box-shadow: 5px 5px 10px 0px #d4d4d4;background-color: rgb(138, 138, 255)
+        }
         }
         .contactUs-btn{
           background-color: #eb57ff;
@@ -122,8 +125,7 @@ body{
       
       display: flex;
       flex-wrap: wrap;
-      padding: 2rem;
-      margin: 0 auto 2rem auto;
+      padding: 5dvh 5vw 15dvh 5vw;
       gap: 2rem;
       justify-content: center;
     }
@@ -134,7 +136,7 @@ body{
       background-color: rgb(255, 255, 255);
       border: #80808062 solid 1px;
       border-radius: .5rem;
-      filter: drop-shadow(8px 8px 10px gray);
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
       width: 20rem;
 
       .cardContent{
@@ -164,6 +166,7 @@ body{
   #gallery-section{
     color: white;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 100dvh;
@@ -200,6 +203,8 @@ body{
           object-fit: contain;
           width: 90vw;
           max-height: 80dvh;
+          margin-right: 30vw;
+
         } 
       }
     }
@@ -225,7 +230,8 @@ body{
         background-color: rgb(255, 255, 255);
         border: #d4d4d4 solid 1px;
         border-radius: 1rem;
-        filter: drop-shadow(8px 8px 10px gray);
+        box-shadow: #0000001e 2px 2px 8px;
+
         img{
           height: 3.5rem;
           margin-right: 1rem;
@@ -312,16 +318,18 @@ body{
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 5dvh;
+    height: 4dvh;
     background-color: white;
     padding: 1dvh 3vw;
+
     img{
-      height: 3dvh;
-      margin:0 .5dvh 0 0;
+      height: 2dvh;
+      margin:0 2vw 0 0;
       filter: grayscale(100%) contrast(100%);
+
     }
     span{
-      font-size: 2.5dvh;
+      font-size: 2dvh;
       margin: 0 0 0 auto;
     }
   }
@@ -333,16 +341,16 @@ body{
   cursor: pointer;
   position:absolute;
   right: 5vw;
-  top: 3vw;
+  top: 1dvh;
   background-color: #000000;
   padding: 1.5vw;
   border-radius: 1vw;
 }
 
 .bar {
-  width: 4.5vw;
-  height: .6vw;
-  margin: .4vw 0;
+  width: 4vw;
+  height: .5vw;
+  margin: .3vw 0;
   background-color: #ffffff;
 }
 
@@ -356,9 +364,10 @@ body{
     flex-direction: column;
     padding: 3vw 0 2vw 0;
     border-bottom: #d4d4d4 solid 2px;
-    filter: drop-shadow(8px 8px 10px gray);
+    box-shadow: #000000 4px 4px 8px;
     z-index: 10;
     background-color: white;
+    max-height: 10vw;
 
     img{
       position: absolute;
